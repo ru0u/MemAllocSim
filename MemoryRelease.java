@@ -21,7 +21,7 @@ public class MemoryRelease {
                 block.processID = "*";
                 block.internalFlag = 0;
 
-                // EXACT message like sample output (page 4)
+                
                 System.out.println("Process " + pID + " released.");
                 found = true;
                 break;
