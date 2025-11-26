@@ -41,8 +41,8 @@ public class MemoryAllocation {
             block.processID = pID;
             block.internalFlag = 0;
 
-            System.out.println("Process " + pID + " allocated at: "
-                    + block.startblock + " - " + block.endblock); }
+            System.out.println("Process " + pID + " allocated from "
+                    + block.startblock + " to " + block.endblock); }
 //split block
         else {
             int oldStart = block.startblock;
@@ -67,8 +67,8 @@ public class MemoryAllocation {
             memList.set(index, allocated);
             memList.add(index + 1, freeBlock);
 
-            System.out.println("Process " + pID + " allocated at: "
-                    + allocated.startblock + " - " + allocated.endblock); }}
+            System.out.println("Process " + pID + " allocated from "
+                    + allocated.startblock + " to " + allocated.endblock); }}
 
 //FIRST FIT
     private int firstFit(int req) {
